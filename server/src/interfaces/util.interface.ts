@@ -12,4 +12,5 @@ export type IUtil = {
     description2: string;
   };
   socialLinks: [{ name: string; link: string }];
+  skills: string[];
 };

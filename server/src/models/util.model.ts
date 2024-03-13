@@ -49,6 +49,7 @@ const utilSchema = new Schema<IUtil>(
         },
       },
     ],
+    skills: [String],
   },
   {
     timestamps: true,
