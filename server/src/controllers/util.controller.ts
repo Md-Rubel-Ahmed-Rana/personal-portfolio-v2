@@ -4,7 +4,7 @@ import httpStatus from "http-status";
 
 const initiateUtil = async (req: Request, res: Response) => {
   try {
-    await UtilService.initiateUtil();
+    await UtilService.initiateUtil(req.body);
     res.status(httpStatus.CREATED).json({
       message: "Util initiated",
       statusCode: httpStatus.CREATED,

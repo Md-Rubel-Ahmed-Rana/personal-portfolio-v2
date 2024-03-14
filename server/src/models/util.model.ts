@@ -6,46 +6,48 @@ const utilSchema = new Schema<IUtil>(
     bannerSection: {
       name: {
         type: String,
-        required: true,
+        default: "",
       },
       image: {
         type: String,
-        required: true,
+        default: "",
       },
       position: {
         type: String,
-        required: true,
+        default: "",
       },
       description: {
         type: String,
-        required: true,
+        default: "",
       },
       resumeLink: {
         type: String,
-        required: true,
+        default: "",
       },
     },
     aboutSection: {
       image: {
         type: String,
-        required: true,
+        default: "",
       },
       description1: {
         type: String,
-        required: true,
+        default: "",
       },
       description2: {
         type: String,
-        required: true,
+        default: "",
       },
     },
     socialLinks: [
       {
         name: {
           type: String,
+          default: "",
         },
         link: {
           type: String,
+          default: "",
         },
       },
     ],

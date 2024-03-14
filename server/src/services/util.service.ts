@@ -1,8 +1,8 @@
 import { IUtil } from "../interfaces/util.interface";
 import { UtilModel } from "../models/util.model";
 
-const initiateUtil = async () => {
-  await UtilModel.create();
+const initiateUtil = async (data: IUtil) => {
+  await UtilModel.create(data);
 };
 
 const updateBannerSectionContent = async (
@@ -29,6 +29,7 @@ const updateSkills = async (id: string, content: Partial<IUtil>) => {
 
 const getUtil = async () => {
   const data = await UtilModel.find({});
+  console.log(data);
   return data[0];
 };
 

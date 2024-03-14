@@ -33,4 +33,4 @@ const courseSchema = new Schema<IEducation>(
   }
 );
 
-export const Education = model<IEducation>("Course", courseSchema);
+export const Education = model<IEducation>("Education", courseSchema);
